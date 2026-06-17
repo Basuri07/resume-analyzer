@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    /* background:linear-gradient(135deg,#4facfe,#00f2fe); */
+background-color: aquamarine;
+    min-height:100vh;
+ 
+    transition:0.4s;
+
+}
+
+body.dark{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+    background:white;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+
+}
+
+body.dark nav{
+
+    background:#1d1d1d;
+
+}
+
+nav h2{
+
+    color:#0077ff;
+
+}
+
+#themeBtn{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    background:pink;
+
+    color:white;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+.left,.right{
+
+    background:rgba(255,255,255,.2);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+
+}
+
+body.dark .left,
+
+body.dark .right{
+
+    background:#1f1f1f;
+
+}
+
+.left h3{
+
+    margin-bottom:20px;
+
+}
+
+input[type=file]{
+
+    width:100%;
+
+    padding:10px;
+
+}
+
+textarea{
+
+    width:100%;
+
+    height:260px;
+
+    margin-top:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    resize:none;
+
+    font-size:16px;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+#analyzeBtn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0077ff;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+#analyzeBtn:hover{
+
+    transform:scale(1.02);
+
+}
+
+.scoreBox{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.circle{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    border:12px solid gainsboro;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:45px;
+
+    font-weight:bold;
+
+    color:pink;
+
+    animation:pop 1s;
+
+}
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(.5);
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.result{
+
+    margin-top:30px;
+
+}
+
+.result h3{
+
+    margin-top:20px;
+
+    color:gainsboro;
+
+}
+
+#skills,#missing{
+
+    margin-top:10px;
+
+    padding:12px;
+
+    background:white;
+
+    border-radius:10px;
+
+    color:black;
+
+}
+
+body.dark #skills,
+
+body.dark #missing{
+
+    background:#2b2b2b;
+
+    color:white;
+
+}
+
+#tips{
+
+    margin-left:20px;
+
+    margin-top:10px;
+
+}
+
+#tips li{
+
+    margin-top:8px;
+
+}
+
+#downloadBtn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:12px;
+
+    border:none;
+
+    background:green;
+
+    color:white;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+@media(max-width:900px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+}
