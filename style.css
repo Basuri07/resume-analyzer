@@ -8,7 +8,7 @@
 body{
 
     /* background:linear-gradient(135deg,#4facfe,#00f2fe); */
-background-color: aquamarine;
+background-color:  rgb(213, 241, 232);
     min-height:100vh;
  
     transition:0.4s;
@@ -191,7 +191,7 @@ button{
 
     border-radius:50%;
 
-    border:12px solid gainsboro;
+    border:12px solid #f8fa95;
 
     display:flex;
 
@@ -203,7 +203,7 @@ button{
 
     font-weight:bold;
 
-    color:pink;
+    color:yellow;
 
     animation:pop 1s;
 
